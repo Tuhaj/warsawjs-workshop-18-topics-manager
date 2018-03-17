@@ -1,0 +1,32 @@
+[
+    {
+      "id": "dgbv14crthv652qcr",
+      "name": "JS Dla Początkujących",
+      "trainers": [
+        244935,
+        6204356,
+        13819776
+      ],
+      "vote": 0
+    },
+    {
+      "id": "asdfrvev35234ttrh",
+      "name": "WTF JS",
+      "trainers": [
+        244935,
+        6118271
+      ],
+      "vote": 0
+    },
+    {
+      "id": "3246sdgfdjh34tcwq",
+      "name": "Testowanie JS",
+      "trainers": [
+        244935,
+        6204356,
+        6118271,
+        13819776
+      ],
+      "vote": 0
+    }
+]
