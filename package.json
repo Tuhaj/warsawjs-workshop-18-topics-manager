@@ -4,5 +4,15 @@
   "description": "WarsawJS Workshop #18 18.03.2018",
   "main": "index.js",
   "author": "Piotr Zientara <314zientara@gmail.com>",
-  "license": "MIT"
+  "scripts": {
+    "dev": "parcel index.html",
+    "lint": "yarn standard --fix"
+  },
+  "standard": {
+    "ignore": ["dist/"]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "standard": "^11.0.1"
+  }
 }
