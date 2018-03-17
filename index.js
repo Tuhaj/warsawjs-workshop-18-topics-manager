@@ -1,11 +1,16 @@
 'use strict'
+
 require('bulma')
 const hello = require('hellojs')
+const config = require('./config.js')
 
+let userId = null
+let userAvatar = null
+console.log("config.github", config.github);
 hello.init({
-  github: '8fa50de40d90f1f92c96',
+  github: config.github,
 }, {
-  redirect_uri: 'http://localhost:1234'
+  redirect_uri: config.redirect_uri
 })
 
 const github = hello('github');
@@ -19,6 +24,8 @@ githubLogin.addEventListener('click', (e) => {
   })
   .then(function(user) {
     userName.textContent = `Hello ${user.login}`
+    userAvatar = user.avatar
+    userId = user.id
   }, function (e) {
     console.log('Signin error: ' + e.error.message)
   })
