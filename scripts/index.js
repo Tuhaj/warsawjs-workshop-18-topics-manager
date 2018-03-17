@@ -6,7 +6,6 @@ const config = require('./config.js')
 
 let userId = null
 let userAvatar = null
-console.log("config.github", config.github);
 hello.init({
   github: config.github,
 }, {

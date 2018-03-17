@@ -6,7 +6,9 @@
   "author": "Piotr Zientara <314zientara@gmail.com>",
   "scripts": {
     "dev": "parcel index.html",
-    "lint": "yarn standard --fix"
+    "lint": "yarn standard --fix",
+    "deploy": "gh-pages -d dist/ -b gh-pages",
+    "build": "parcel build index.html --no-cache --public-url ./"
   },
   "standard": {
     "ignore": [
@@ -17,6 +19,7 @@
   "dependencies": {
     "babel-plugin-transform-object-assign": "^6.22.0",
     "bulma": "^0.6.2",
+    "gh-pages": "^1.1.0",
     "hellojs": "^2.0.0-4",
     "node-sass": "^4.7.2",
     "standard": "^11.0.1"
