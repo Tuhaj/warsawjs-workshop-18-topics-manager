@@ -6,6 +6,6 @@ module.exports = {
   },
   production: {
     github: '8fa50de40d90f1f92c96',
-    redirect_uri: 'http://localhost:1234'
+    redirect_uri: 'https://tuhaj.github.io/warsawjs-workshop-18-topics-manager/'
   }
 }
