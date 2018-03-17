@@ -3,9 +3,7 @@
 require('bulma')
 const hello = require('hellojs')
 const appConfig = require('./config.js')
-let config = null
-
-config = window.location.href === appConfig.localhost ? appConfig.local : appConfig.production
+const config = window.location.href === appConfig.localhost ? appConfig.local : appConfig.production
 
 hello.init({
   github: config.github
