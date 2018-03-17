@@ -11,17 +11,15 @@ hello.init({
 const github = hello('github');
 
 const githubLogin = document.querySelector('#GitHub-login')
-
-githubLogin.addEventListener('click', () => {
-
+const userName = document.querySelector('#user-panel')
+githubLogin.addEventListener('click', (e) => {
+  e.preventDefault()
   github.login().then(function () {
     return github.api('/me');
   })
-  .then(function() {
-    debugger
-    console.log('You are signed in to GitHub')
+  .then(function(user) {
+    userName.textContent = `Hello ${user.login}`
   }, function (e) {
-    debugger
     console.log('Signin error: ' + e.error.message)
   })
 })
