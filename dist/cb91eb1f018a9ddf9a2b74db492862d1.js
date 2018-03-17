@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({7:[function(require,module,exports) {
+})({9:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -101,7 +101,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],6:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":7}],4:[function(require,module,exports) {
+},{"./bundle-url":9}],6:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":6}],5:[function(require,module,exports) {
+},{"_css_loader":8}],7:[function(require,module,exports) {
 var global = (1,eval)("this");
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -5191,7 +5191,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }, { 349: 349 }] }, {}, [347])(347);
 });
 //# sourceMappingURL=hello.all.js.map
-},{}],3:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 module.exports = {
   localhost: 'http://localhost:1234/',
   local: {
@@ -5203,7 +5203,7 @@ module.exports = {
     redirect_uri: 'https://tuhaj.github.io/warsawjs-workshop-18-topics-manager/'
   }
 };
-},{}],2:[function(require,module,exports) {
+},{}],4:[function(require,module,exports) {
 'use strict';
 
 require('bulma');
@@ -5232,7 +5232,7 @@ githubLogin.addEventListener('click', function (e) {
     console.log('Signin error: ' + e.error.message);
   });
 });
-},{"bulma":4,"hellojs":5,"./config.js":3}],8:[function(require,module,exports) {
+},{"bulma":6,"hellojs":7,"./config.js":5}],10:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -5254,7 +5254,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52322' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57376' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -5355,5 +5355,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[8,2])
+},{}]},{},[10,4])
 //# sourceMappingURL=/dist/cb91eb1f018a9ddf9a2b74db492862d1.map
