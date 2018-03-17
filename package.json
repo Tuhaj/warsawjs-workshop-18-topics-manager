@@ -17,7 +17,6 @@
   "dependencies": {
     "babel-plugin-transform-object-assign": "^6.22.0",
     "bulma": "^0.6.2",
-    "client-oauth2": "^4.1.0",
     "hellojs": "^2.0.0-4",
     "node-sass": "^4.7.2",
     "standard": "^11.0.1"
